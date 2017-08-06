@@ -1,0 +1,7 @@
+import movierental.movie.MovieType
+
+model {
+	MovieType movieType
+}
+
+json g.render(movieType, [resolveTemplate: false])

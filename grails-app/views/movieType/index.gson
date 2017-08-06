@@ -1,0 +1,8 @@
+import movierental.movie.MovieType
+
+model {
+	Iterable<MovieType> movieTypeList
+}
+
+json tmpl.movieType(movieTypeList ?: [])
+
