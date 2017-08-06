@@ -1,5 +1,6 @@
 package movierental.events
 
+import grails.converters.JSON
 import grails.rx.web.RxController
 import groovy.util.logging.Slf4j
 import io.reactivex.Emitter
@@ -18,5 +19,13 @@ class SseController implements RxController {
                         { ex -> emitter.onError(ex) },
                         { emitter.onComplete("Finished")} )
         }
+    }
+
+    def events2() {
+        rx.stream (
+            Observable
+                .interval(1, TimeUnit.SECONDS)
+                .map { rx.event([type: 'time', num: it as int] as JSON) }
+        )
     }
 }

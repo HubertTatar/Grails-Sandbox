@@ -7,6 +7,7 @@ class UrlMappings {
         "/movieTypes"(resources:"MovieType")
         "/horror"(controller: 'movie', action: 'horror')
         "/sse"   (controller: 'sse'  , action: 'events')
+        "/sse2"   (controller: 'sse'  , action: 'events2')
         "/eventsSimple"   (controller: 'sse'  , action: 'eventsSimple')
         "/eventsInterval"   (controller: 'sse'  , action: 'eventsInterval')
 
