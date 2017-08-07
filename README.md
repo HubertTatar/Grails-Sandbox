@@ -4,9 +4,10 @@ Grails 3.3.0 Sandbox
     * Grails rest resources
     * JsonViews
     * Server sent events
-* Url
+    * GORM Data Services
+* Urls
     * http://localhost:8080 - list plugins
-    * swagger http://localhost:8080/v2.api-docs
+    * swagger http://localhost:8080/v2.api-docs - todo
 * Commands
     * grails create-domain-resource todo
     * grails create-restful-controller todo.Todo

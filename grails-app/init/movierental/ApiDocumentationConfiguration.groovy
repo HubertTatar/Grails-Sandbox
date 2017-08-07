@@ -14,28 +14,22 @@ import static springfox.documentation.builders.PathSelectors.regex
 
 @Configuration
 @EnableSwagger2
-@PackageScope
 class ApiDocumentationConfiguration {
-    //http://localhost:8080/v2/api-docs
+
     @Bean
     Docket documentation() {
         return new Docket(DocumentationType.SWAGGER_2)
                 .select()
                 .apis(RequestHandlerSelectors.any())
-                .paths(regex("/.*"))
+                .paths(regex("*"))
                 .build().pathMapping("/")
                 .apiInfo(metadata())
     }
 
-    @Bean
-    UiConfiguration uiConfig() {
-        return UiConfiguration.DEFAULT
-    }
-
     private ApiInfo metadata() {
         return new ApiInfoBuilder()
-                .title("Grails 3 SpringFox test API")
-                .description("Grails 3 SpringFox test API")
+                .title("Rest API")
+                .description("Movie Api")
                 .version("1.0")
                 .contact("")
                 .build()
