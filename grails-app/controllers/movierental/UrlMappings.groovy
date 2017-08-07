@@ -9,6 +9,7 @@ class UrlMappings {
         "/sse"   (controller: 'sse'  , action: 'events')
         "/sse2"   (controller: 'sse'  , action: 'events2')
         "/quartz"   (controller: 'sse'  , action: 'quartz')
+        "/quartz2"   (controller: 'sse'  , action: 'quartz2')
         "/eventsSimple"   (controller: 'sse'  , action: 'eventsSimple')
         "/eventsInterval"   (controller: 'sse'  , action: 'eventsInterval')
 

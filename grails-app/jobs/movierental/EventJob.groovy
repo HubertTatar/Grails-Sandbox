@@ -1,12 +1,13 @@
 package movierental
 
 import grails.events.annotation.Publisher
+import groovy.transform.PackageScope
 import groovy.util.logging.Slf4j
 
 @Slf4j
+@PackageScope
 class EventJob {
 
-    static final String JOB_GENERATED_EVENT = "JOB_GENERATED_EVENT"
     Random rand = new Random()
 
     static triggers = {
