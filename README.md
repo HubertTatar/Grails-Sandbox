@@ -1,8 +1,9 @@
 Grails 3.3.0 Sandbox
 
 * Features
+    * Grails rest resources
     * JsonViews
-
+    * Server sent events
 * Url
     * http://localhost:8080 - list plugins
     * swagger http://localhost:8080/v2.api-docs
