@@ -1,4 +1,4 @@
-package movierental.events
+package movierental
 
 import grails.events.annotation.Publisher
 import groovy.util.logging.Slf4j
