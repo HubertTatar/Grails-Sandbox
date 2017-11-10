@@ -13,6 +13,12 @@ class UrlMappings {
         "/eventsSimple"   (controller: 'sse'  , action: 'eventsSimple')
         "/eventsInterval"   (controller: 'sse'  , action: 'eventsInterval')
 
+        get '/rental'        (controller: 'rental', action: 'list')
+        get "/rental/$id"    (controller: 'rental', action: 'find')
+        post '/rental'       (controller: 'rental', action: 'create')
+        put "/rental/$id"    (controller: 'rental', action: 'update')
+        patch "/rental/$id"  (controller: 'rental', action: 'updatePart')
+
         "/"(controller: 'application', action:'index')
         "500"(view: '/error')
         "404"(view: '/notFound')

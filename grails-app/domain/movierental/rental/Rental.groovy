@@ -5,5 +5,6 @@ import movierental.movie.Movie
 
 @Resource(uri = '/rentals', readOnly = false, formats = ['json', 'xml'])
 class Rental {
-    Movie movie
+    String movie
+    String user
 }
