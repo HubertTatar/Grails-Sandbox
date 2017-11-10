@@ -1,5 +1,7 @@
 Grails 3.3.0 Sandbox
 
+Stuff for Grails introduction workshop for newbies.
+
 * Features
     * Grails rest resources
     * JsonViews
