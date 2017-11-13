@@ -5,7 +5,6 @@ import groovy.transform.PackageScope
 import groovy.util.logging.Slf4j
 
 @Slf4j
-@PackageScope
 class EventJob {
 
     Random rand = new Random()

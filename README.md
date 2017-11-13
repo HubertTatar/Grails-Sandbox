@@ -7,6 +7,7 @@ Stuff for Grails introduction workshop for newbies.
     * JsonViews
     * Server sent events
     * GORM Data Services
+	* Spock Unit/Integration test
 * Urls
     * http://localhost:8080 - list plugins
     * swagger http://localhost:8080/v2.api-docs - todo
